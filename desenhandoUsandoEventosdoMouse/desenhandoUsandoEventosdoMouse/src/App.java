@@ -7,6 +7,8 @@ public class App extends JFrame {
     public App() {
         super("Eventos do Mouse e Teclado");
 
+        // getContentPane() recupera a camada do painel de 
+        // conteúdo para que você possa adicionar um objeto a ela.
         Container c = getContentPane();
         PainelDesenho painel = new PainelDesenho();
 
