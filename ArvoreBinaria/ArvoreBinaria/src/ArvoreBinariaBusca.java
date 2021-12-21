@@ -144,8 +144,26 @@ public class ArvoreBinariaBusca {
                     quantNosArvore(no.getDireito()) + 1);
         }
     }
-    public Object retornarMaiorElemento() {
-        return null;
+
+    // método que permite retornar o maior nó de uma árvore
+    // binária de busca
+    public No retornarMaiorElemento() {
+
+        // chama a versão recursiva do método
+        return retornarMaiorElemento(raiz);
     }
 
+    public No retornarMaiorElemento(No no) {
+
+        if ((no == null) || (no.getDireito() == null)) {
+            
+            // ponto de parada
+            return no;
+        
+        } else {
+
+            // descendo do lado direito
+            return retornarMaiorElemento(no.getDireito());
+        }
+    }
 }

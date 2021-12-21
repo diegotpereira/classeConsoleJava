@@ -54,8 +54,14 @@ public class App {
 
         // vamos exibir a quantidade de nós
         // na árvore 
-        System.out.println("\nA árvore possui: " + 
-                           arvore.quantNosArvore() + " nós.\n");
+        // System.out.println("\nA árvore possui: " + 
+        //                    arvore.quantNosArvore() + " nós.\n");
+
+        // System.out.println("\n");
+
+        // obter o maior elemento da árvore binária de busca
+        System.out.println("\nO maior nó é: " + 
+                           arvore.retornarMaiorElemento().getValor());
 
         System.out.println("\n");
 
